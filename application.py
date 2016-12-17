@@ -1,6 +1,6 @@
 from flask import Flask
-from flask.ext.mongoengine import MongoEngine #adding mongo engine
-#from flask_mongoengine import MongoEngine
+#from flask.ext.mongoengine import MongoEngine #adding mongo engine
+from flask_mongoengine import MongoEngine
 
 db = MongoEngine()
 

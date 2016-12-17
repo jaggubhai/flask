@@ -8,19 +8,16 @@ class RegisterForm(Form):
     email = EmailField('Email address', [
         validators.DataRequired(),
         validators.Email()
-        ]
-    )
+        ])
     username = StringField('Username', [
         validators.Required(),
         validators.length(min=4, max=25)
-        ]
-    )
+        ])
     password = PasswordField('New Password', [
         validators.Required(),
-        validators.EqualTo('confirm',message='passwords must match')
-        validators.lenth(min=8, max=15)
-        ]
-    )
+        validators.EqualTo('confirm', message='passwords must match'),
+        validators.length(min=8, max=15)
+        ])
     confirm = PasswordField('Repeat Password')
 
 
