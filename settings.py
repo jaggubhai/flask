@@ -1,4 +1,4 @@
 SECRET_KEY = 'flask'
 DEBUG=True
 
-MONGO_DB = 'flask'
+MONGO_DB = 'flaskbook'
