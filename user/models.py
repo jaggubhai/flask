@@ -1,6 +1,6 @@
 from application import db # db global variable
 
-from utilities.common import utc_ts_now as now # import utc time from utilities
+from utilities.common import utc_now_ts as now # import utc time from utilities
 
 class User(db.Document): #Document equivalent to rows in RDS.
     username = db.StringField(db_field="u", required=True, Unique=True) # db_field creates a field u instead of Username
