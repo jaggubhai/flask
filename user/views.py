@@ -6,7 +6,7 @@ user_app = Blueprint('user_app', __name__)
 def login():
     return "User login"
 
-@user_app.route('/register', methods=('GET', 'POST'))
+@user_app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegisterForm()
     return render_template('user/register.html', form=form)
